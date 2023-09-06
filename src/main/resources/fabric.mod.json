@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "vinification",
+	"version": "${version}",
+	"name": "Vinification",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"HunterGhostfist"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/vinification/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "net.hgf.vinification.Vinification"
+		],
+		"fabric-datagen": [
+			"net.hgf.vinification.VinificationDataGenerator"
+		],
+		"client": [
+			"net.hgf.vinification.VinificationModClient"
+		]
+	},
+	"mixins": [
+		"vinification.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
