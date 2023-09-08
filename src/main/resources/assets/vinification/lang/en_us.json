@@ -23,6 +23,10 @@
   "item.vinification.wine_bottle_red": "Red Wine",
   "item.vinification.wine_bottle_red_quality": "Aged Red Wine",
   "item.vinification.wine_glass_item": "Wine Glass",
+  "item.vinification.seeds_blue": "Blue Grape Seeds",
+  "item.vinification.seeds_green": "Green Grape Seeds",
+  "item.vinification.seeds_purple": "Purple Grape Seeds",
+  "item.vinification.seeds_red": "Red Grape Seeds",
 
   "block.vinification.cheese_block": "Cheese Wheel",
   "block.vinification.grape_crate_blue": "Crate of Blue Grapes",
@@ -31,6 +35,7 @@
   "block.vinification.grape_crate_red": "Crate of Red Grapes",
   "block.vinification.aging_barrel": "Aging Barrel",
   "block.vinification.tapper": "Tree Tapper",
+  "block.vinification.stomping_barrel": "Stomping Barrel",
 
   "block.vinification.keg_acacia": "Acacia Keg",
   "block.vinification.keg_birch": "Birch Keg",

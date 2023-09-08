@@ -17,12 +17,11 @@ import org.jetbrains.annotations.Nullable;
 public class StompingBarrel extends Block {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
     private static final VoxelShape SHAPE = VoxelShapes.union(
-            Block.createCuboidShape(-8, 0, -8, 24, 1, 24),
-            Block.createCuboidShape(-8, 0, -9, 24, 14, -8),
-            Block.createCuboidShape(-8, 0, 24, 24, 14, 25),
-            Block.createCuboidShape(24, 0, -8, 25, 14, 24),
-            Block.createCuboidShape(-9, 0, -8, -8, 14, 24)
-
+            Block.createCuboidShape(1, 0, 1, 15, 1, 15),
+            Block.createCuboidShape(1, 0, 0, 15, 14, 1),
+            Block.createCuboidShape(1, 0, 15, 15, 14, 16),
+            Block.createCuboidShape(0, 0, 1, 1, 14, 15),
+            Block.createCuboidShape(15, 0, 1, 16, 14, 15)
     );
 
     public StompingBarrel(Settings settings) {
@@ -32,16 +31,18 @@ public class StompingBarrel extends Block {
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return SHAPE;
+        }
+
+
+        @Nullable
+        @Override
+        public BlockState getPlacementState(ItemPlacementContext ctx) {
+            return this.getDefaultState().with(FACING, ctx.getHorizontalPlayerFacing().getOpposite());
+        }
+
+        @Override
+        protected void appendProperties(StateManager.Builder < Block, BlockState > builder){
+            builder.add(FACING);
+        }
     }
 
-    @Nullable
-    @Override
-    public BlockState getPlacementState(ItemPlacementContext ctx) {
-        return this.getDefaultState().with(FACING, ctx.getHorizontalPlayerFacing().getOpposite());
-    }
-
-    @Override
-    protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(FACING);
-    }
-}

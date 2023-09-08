@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "minecraft:jungle_log"
+    },
+    "S": {
+      "item": "minecraft:jungle_slab"
+    }
+  },
+  "pattern": [
+    "LLL",
+    "S S",
+    "LLL"
+  ],
+  "result": {
+    "item": "vinification:keg_jungle"
+  },
+  "show_notification": true
+}

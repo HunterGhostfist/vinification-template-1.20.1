@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "minecraft:dark_oak_log"
+    },
+    "S": {
+      "item": "minecraft:dark_oak_slab"
+    }
+  },
+  "pattern": [
+    "LLL",
+    "S S",
+    "LLL"
+  ],
+  "result": {
+    "item": "vinification:keg_dark_oak"
+  },
+  "show_notification": true
+}

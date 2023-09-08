@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "minecraft:acacia_log"
+    },
+    "S": {
+      "item": "minecraft:acacia_slab"
+    }
+  },
+  "pattern": [
+    "LLL",
+    "S S",
+    "LLL"
+  ],
+  "result": {
+    "item": "vinification:keg_acacia"
+  },
+  "show_notification": true
+}

@@ -15,8 +15,10 @@ import org.jetbrains.annotations.Nullable;
 
 public class Tapper extends Block {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
-    private static final VoxelShape X_AXIS_SHAPE = Block.createCuboidShape(6, 0, 3, 16, 11, 13);
-    private static final VoxelShape Z_AXIS_SHAPE = Block.createCuboidShape(3, 0, 6, 13, 11, 16);
+    private static final VoxelShape SHAPE_NORTH = Block.createCuboidShape(3, 0, 6, 13, 11, 16);
+    private static final VoxelShape SHAPE_EAST = Block.createCuboidShape(0, 0, 3, 10, 11, 13);
+    private static final VoxelShape SHAPE_SOUTH = Block.createCuboidShape(3, 0, 0, 13, 11, 10);
+    private static final VoxelShape SHAPE_WEST = Block.createCuboidShape(6, 0, 3, 16, 11, 13);
 
     public Tapper(Settings settings) {
         super(settings);
@@ -25,11 +27,20 @@ public class Tapper extends Block {
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         Direction direction = state.get(FACING);
-        if (direction.getAxis() == Direction.Axis.X) {
-            return X_AXIS_SHAPE;
-        }
-        return Z_AXIS_SHAPE;
+
+    switch (direction) {
+        case NORTH:
+            return SHAPE_NORTH;
+        case SOUTH:
+            return SHAPE_SOUTH;
+        case EAST:
+            return SHAPE_EAST;
+        case WEST:
+            return SHAPE_WEST;
+        default:
+            return super.getOutlineShape(state, world, pos, context);
     }
+}
 
     @Nullable
     @Override

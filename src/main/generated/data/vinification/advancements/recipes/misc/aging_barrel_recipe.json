@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_barrel": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:barrel"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_jar_resin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vinification:jar_resin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:aging_barrel_recipe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_jar_resin",
+      "has_barrel",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:aging_barrel_recipe"
+    ]
+  },
+  "sends_telemetry_event": false
+}

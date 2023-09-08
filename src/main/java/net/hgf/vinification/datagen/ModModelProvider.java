@@ -3,8 +3,11 @@ package net.hgf.vinification.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.hgf.vinification.block.ModBlocks;
+import net.hgf.vinification.block.custom.GrapeBushBlue;
+import net.hgf.vinification.block.custom.GrapeBushGreen;
+import net.hgf.vinification.block.custom.GrapeBushPurple;
+import net.hgf.vinification.block.custom.GrapeBushRed;
 import net.hgf.vinification.item.ModItems;
-import net.minecraft.block.CakeBlock;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
@@ -34,6 +37,11 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.AGING_BARREL);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.TAPPER);
         blockStateModelGenerator.registerSimpleState(ModBlocks.STOMPING_BARREL);
+
+        blockStateModelGenerator.registerCrop(ModBlocks.GRAPE_BUSH_BLUE, GrapeBushBlue.AGE, 0, 1, 2, 3);
+        blockStateModelGenerator.registerCrop(ModBlocks.GRAPE_BUSH_GREEN, GrapeBushGreen.AGE, 0, 1, 2, 3);
+        blockStateModelGenerator.registerCrop(ModBlocks.GRAPE_BUSH_PURPLE, GrapeBushPurple.AGE, 0, 1, 2, 3);
+        blockStateModelGenerator.registerCrop(ModBlocks.GRAPE_BUSH_RED, GrapeBushRed.AGE, 0, 1, 2, 3);
 
     }
 

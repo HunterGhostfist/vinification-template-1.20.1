@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "minecraft:warped_hyphae"
+    },
+    "S": {
+      "item": "minecraft:warped_slab"
+    }
+  },
+  "pattern": [
+    "LLL",
+    "S S",
+    "LLL"
+  ],
+  "result": {
+    "item": "vinification:keg_warped"
+  },
+  "show_notification": true
+}

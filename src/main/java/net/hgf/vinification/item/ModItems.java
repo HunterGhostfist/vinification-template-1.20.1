@@ -2,12 +2,10 @@ package net.hgf.vinification.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.hgf.vinification.Vinification;
 import net.hgf.vinification.block.ModBlocks;
-import net.hgf.vinification.block.custom.CheeseBlock;
+import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -57,6 +55,14 @@ public class ModItems {
             new Item(new FabricItemSettings()));
     public static final Item WINE_GLASS_ITEM = registerItem("wine_glass_item",
             new Item(new FabricItemSettings()));
+    public static final Item SEEDS_BLUE = registerItem("seeds_blue",
+            new AliasedBlockItem(ModBlocks.GRAPE_BUSH_BLUE, new FabricItemSettings()));
+    public static final Item SEEDS_GREEN = registerItem("seeds_green",
+            new AliasedBlockItem(ModBlocks.GRAPE_BUSH_GREEN, new FabricItemSettings()));
+    public static final Item SEEDS_PURPLE = registerItem("seeds_purple",
+            new AliasedBlockItem(ModBlocks.GRAPE_BUSH_PURPLE, new FabricItemSettings()));
+    public static final Item SEEDS_RED = registerItem("seeds_red",
+            new AliasedBlockItem(ModBlocks.GRAPE_BUSH_RED, new FabricItemSettings()));
 
 
 

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:barrel"
+    },
+    "L": {
+      "tag": "minecraft:logs"
+    },
+    "R": {
+      "item": "vinification:jar_resin"
+    }
+  },
+  "pattern": [
+    "LRL",
+    "RBR",
+    "LRL"
+  ],
+  "result": {
+    "item": "vinification:aging_barrel"
+  },
+  "show_notification": true
+}

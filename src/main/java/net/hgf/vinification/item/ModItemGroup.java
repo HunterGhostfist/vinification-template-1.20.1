@@ -38,6 +38,10 @@ public class ModItemGroup {
                         entries.add(ModItems.WINE_BOTTLE_RED);
                         entries.add(ModItems.WINE_BOTTLE_RED_QUALITY);
                         entries.add(ModItems.WINE_GLASS_ITEM);
+                        entries.add(ModItems.SEEDS_BLUE);
+                        entries.add(ModItems.SEEDS_GREEN);
+                        entries.add(ModItems.SEEDS_PURPLE);
+                        entries.add(ModItems.SEEDS_RED);
 
                         entries.add(ModBlocks.GRAPE_CRATE_BLUE);
                         entries.add(ModBlocks.GRAPE_CRATE_GREEN);

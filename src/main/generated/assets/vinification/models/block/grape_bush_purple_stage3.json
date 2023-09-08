@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "vinification:block/grape_bush_purple_stage3"
+  }
+}

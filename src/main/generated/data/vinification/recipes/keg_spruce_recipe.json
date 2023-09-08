@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "minecraft:spruce_log"
+    },
+    "S": {
+      "item": "minecraft:spruce_slab"
+    }
+  },
+  "pattern": [
+    "LLL",
+    "S S",
+    "LLL"
+  ],
+  "result": {
+    "item": "vinification:keg_spruce"
+  },
+  "show_notification": true
+}

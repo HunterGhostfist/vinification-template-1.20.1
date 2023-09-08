@@ -21,6 +21,16 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.PURPLE)));
     public static final Block GRAPE_CRATE_RED = registerBlock("grape_crate_red",
             new Block(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.DARK_CRIMSON)));
+
+    //grape crops
+    public static final Block GRAPE_BUSH_BLUE = registerBlockWithoutBlockItem("grape_bush_blue",
+            new GrapeBushBlue(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+    public static final Block GRAPE_BUSH_GREEN = registerBlockWithoutBlockItem("grape_bush_green",
+            new GrapeBushGreen(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+    public static final Block GRAPE_BUSH_PURPLE = registerBlockWithoutBlockItem("grape_bush_purple",
+            new GrapeBushPurple(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+    public static final Block GRAPE_BUSH_RED = registerBlockWithoutBlockItem("grape_bush_red",
+            new GrapeBushRed(FabricBlockSettings.copyOf(Blocks.WHEAT)));
     //cheese slices
     public static final Block CHEESE_BLOCK = registerBlock("cheese",
             new CheeseBlock(FabricBlockSettings.copyOf(Blocks.CAKE).mapColor(MapColor.OAK_TAN)));
@@ -64,6 +74,9 @@ public class ModBlocks {
     public static final Block TAPPER = registerBlock("tapper",
             new Tapper(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque()));
 
+    private static Block registerBlockWithoutBlockItem(String name, Block block) {
+        return Registry.register(Registries.BLOCK, new Identifier(Vinification.MOD_ID, name), block);
+    }
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

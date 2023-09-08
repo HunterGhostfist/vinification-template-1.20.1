@@ -2,7 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [48, 32],
 	"textures": {
-		"1": "vinification:block/tapper"
+		"1": "vinification:block/tapper",
+		"particle": "vinification:block/tapper"
 	},
 	"elements": [
 		{

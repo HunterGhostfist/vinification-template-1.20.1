@@ -1,7 +1,9 @@
-// 1.20.1	2023-09-08T05:01:21.6571512	Vinification/Block Loot Tables
+// 1.20.1	2023-09-08T11:53:52.1437868	Vinification/Block Loot Tables
+4400c2960a0a00b5d3caea53ac56ebf02598ff37 data\vinification\loot_tables\blocks\grape_bush_red.json
 88e35f37b274b63d71670b3bb929d964c9566cf3 data\vinification\loot_tables\blocks\keg_oak.json
 b06f5794c37ab915018a097ccab604dbad02f77d data\vinification\loot_tables\blocks\keg_dark_oak.json
 7a58e6f37caf0382452b01e4ee69ac6330822ebc data\vinification\loot_tables\blocks\keg_birch.json
+a8f35512d691c227998c3ae36bef018302e1c755 data\vinification\loot_tables\blocks\grape_bush_blue.json
 47e7e88452dcd2eeab1ed373553e2504a60789c6 data\vinification\loot_tables\blocks\grape_crate_red.json
 165aec0075505238901472257044326d52cd12ea data\vinification\loot_tables\blocks\keg_mangrove.json
 3c8cf62e37adbe6a7c1448ab094e21a52f65eb56 data\vinification\loot_tables\blocks\keg_cherry.json
@@ -10,6 +12,11 @@ b06f5794c37ab915018a097ccab604dbad02f77d data\vinification\loot_tables\blocks\ke
 ba666476895ea89b08759558358d9b660233a4ae data\vinification\loot_tables\blocks\grape_crate_green.json
 a095bee477f9d995d8759d9c5ffce2f43171ab26 data\vinification\loot_tables\blocks\keg_acacia.json
 64f883d79f26881b34d0060318b004edeef299d0 data\vinification\loot_tables\blocks\keg_spruce.json
+14d3c868bf26d57847cacf70ff84d522b64d29f4 data\vinification\loot_tables\blocks\aging_barrel.json
+67004f5e6c284ed08288a26b86b988b0da04896c data\vinification\loot_tables\blocks\stomping_barrel.json
 4b5fb227adb9ba3150d67299dfb6dd29acb63c67 data\vinification\loot_tables\blocks\grape_crate_purple.json
+0d9d7b8ae37f3735af3b1601b35a6d28e76d0725 data\vinification\loot_tables\blocks\grape_bush_purple.json
 e87b2687e4339ed2a6bb1660c46992e5118755b8 data\vinification\loot_tables\blocks\keg_jungle.json
+268414258baf77356eccd65716db63421b6b91d0 data\vinification\loot_tables\blocks\grape_bush_green.json
 670f652cf3db1eae7100a95fbdadeeae139c71af data\vinification\loot_tables\blocks\grape_crate_blue.json
+12b0249526e5f578fd942f153b80b498d7d7d3ff data\vinification\loot_tables\blocks\tapper.json

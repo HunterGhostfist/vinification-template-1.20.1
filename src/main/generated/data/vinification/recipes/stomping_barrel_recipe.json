@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:barrel"
+    },
+    "S": {
+      "tag": "minecraft:wooden_slabs"
+    }
+  },
+  "pattern": [
+    "SBS",
+    "SSS"
+  ],
+  "result": {
+    "item": "vinification:stomping_barrel"
+  },
+  "show_notification": true
+}
