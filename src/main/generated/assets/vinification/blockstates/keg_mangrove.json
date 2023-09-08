@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "vinification:block/keg_mangrove",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "vinification:block/keg_mangrove"
+    },
+    "facing=south": {
+      "model": "vinification:block/keg_mangrove",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "vinification:block/keg_mangrove",
+      "y": 270
+    }
+  }
+}

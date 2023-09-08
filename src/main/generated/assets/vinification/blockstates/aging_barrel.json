@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "vinification:block/aging_barrel",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "vinification:block/aging_barrel"
+    },
+    "facing=south": {
+      "model": "vinification:block/aging_barrel",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "vinification:block/aging_barrel",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "vinification:grape_crate_red"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "vinification:grapes_red"
+  }
+}

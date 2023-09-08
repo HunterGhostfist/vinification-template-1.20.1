@@ -1,0 +1,22 @@
+{
+    "textures": {
+        "particle": "vinification:block/cheese_side",
+        "bottom": "vinification:block/cheese_bottom",
+        "top": "vinification:block/cheese_top",
+        "side": "vinification:block/cheese_side",
+        "inside": "vinification:block/cheese_inner"
+    },
+    "elements": [
+        {   "from": [ 3, 0, 1 ],
+            "to": [ 15, 8, 15 ],
+            "faces": {
+                "down":  { "texture": "#bottom", "cullface": "down" },
+                "up":    { "texture": "#top" },
+                "north": { "texture": "#side" },
+                "south": { "texture": "#side" },
+                "west":  { "texture": "#inside" },
+                "east":  { "texture": "#side" }
+            }
+        }
+    ]
+}

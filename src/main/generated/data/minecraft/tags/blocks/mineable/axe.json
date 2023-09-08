@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "vinification:grape_crate_blue",
+    "vinification:grape_crate_green",
+    "vinification:grape_crate_purple",
+    "vinification:grape_crate_red",
+    "vinification:keg_acacia",
+    "vinification:keg_birch",
+    "vinification:keg_cherry",
+    "vinification:keg_crimson",
+    "vinification:keg_dark_oak",
+    "vinification:keg_jungle",
+    "vinification:keg_mangrove",
+    "vinification:keg_oak",
+    "vinification:keg_spruce",
+    "vinification:keg_warped",
+    "vinification:aging_barrel",
+    "vinification:stomping_barrel"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "vinification:block/keg_warped",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "vinification:block/keg_warped"
+    },
+    "facing=south": {
+      "model": "vinification:block/keg_warped",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "vinification:block/keg_warped",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "vinification:block/template_keg",
+  "textures": {
+    "keg": "vinification:block/keg_spruce"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:glass"
+    }
+  },
+  "pattern": [
+    "G G",
+    "G G",
+    "GGG"
+  ],
+  "result": {
+    "item": "vinification:jar_empty"
+  },
+  "show_notification": true
+}

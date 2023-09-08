@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "vinification:block/tapper",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "vinification:block/tapper"
+    },
+    "facing=south": {
+      "model": "vinification:block/tapper",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "vinification:block/tapper",
+      "y": 270
+    }
+  }
+}

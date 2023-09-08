@@ -2,6 +2,9 @@ package net.hgf.vinification;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.hgf.vinification.block.ModBlocks;
+import net.hgf.vinification.item.ModItemGroup;
+import net.hgf.vinification.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +14,10 @@ public class Vinification implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		ModItemGroup.registerItemGroups();
+
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
+
 }
