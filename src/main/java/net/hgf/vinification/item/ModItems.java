@@ -53,8 +53,6 @@ public class ModItems {
             new Item(new FabricItemSettings()));
     public static final Item WINE_BOTTLE_RED_QUALITY = registerItem("wine_bottle_red_quality",
             new Item(new FabricItemSettings()));
-    public static final Item WINE_GLASS_ITEM = registerItem("wine_glass_item",
-            new Item(new FabricItemSettings()));
     public static final Item SEEDS_BLUE = registerItem("seeds_blue",
             new AliasedBlockItem(ModBlocks.GRAPE_BUSH_BLUE, new FabricItemSettings()));
     public static final Item SEEDS_GREEN = registerItem("seeds_green",
@@ -92,7 +90,6 @@ public class ModItems {
         entries.add(WINE_BOTTLE_PURPLE_QUALITY);
         entries.add(WINE_BOTTLE_RED);
         entries.add(WINE_BOTTLE_RED_QUALITY);
-        entries.add(WINE_GLASS_ITEM);
 
         entries.add(ModBlocks.GRAPE_CRATE_BLUE);
         entries.add(ModBlocks.GRAPE_CRATE_GREEN);

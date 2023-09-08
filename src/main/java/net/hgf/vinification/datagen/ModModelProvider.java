@@ -68,7 +68,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.WINE_BOTTLE_PURPLE_QUALITY, Models.GENERATED);
         itemModelGenerator.register(ModItems.WINE_BOTTLE_RED, Models.GENERATED);
         itemModelGenerator.register(ModItems.WINE_BOTTLE_RED_QUALITY, Models.GENERATED);
-        itemModelGenerator.register(ModItems.WINE_GLASS_ITEM, Models.GENERATED);
 
 
 

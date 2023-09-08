@@ -94,17 +94,6 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .input('G', Items.GLASS)
                 .criterion(hasItem(Items.GLASS),conditionsFromItem(Items.GLASS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.WINE_BOTTLE_EMPTY) + "_recipe"));
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.WINE_GLASS_ITEM)
-                .pattern(" B ")
-                .pattern(" P ")
-                .pattern("GGG")
-                .input('B', Items.GLASS_BOTTLE)
-                .input('P', Items.GLASS_PANE)
-                .input('G', Items.GLASS)
-                .criterion(hasItem(Items.GLASS_BOTTLE),conditionsFromItem(Items.GLASS))
-                .criterion(hasItem(Items.GLASS_PANE),conditionsFromItem(Items.GLASS))
-                .criterion(hasItem(Items.GLASS),conditionsFromItem(Items.GLASS))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.WINE_GLASS_ITEM) + "_recipe"));
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.AGING_BARREL)
                 .pattern("LRL")
                 .pattern("RBR")

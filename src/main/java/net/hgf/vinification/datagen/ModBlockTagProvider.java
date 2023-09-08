@@ -31,7 +31,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 ModBlocks.KEG_SPRUCE,
                 ModBlocks.KEG_WARPED,
                 ModBlocks.AGING_BARREL,
-                ModBlocks.STOMPING_BARREL);
+                ModBlocks.STOMPING_BARREL
+        );
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(
+                ModBlocks.TAPPER
+        );
 
 
 
