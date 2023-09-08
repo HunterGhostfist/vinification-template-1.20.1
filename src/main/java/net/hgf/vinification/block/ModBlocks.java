@@ -34,18 +34,6 @@ public class ModBlocks {
     //cheese slices
     public static final Block CHEESE_BLOCK = registerBlock("cheese",
             new CheeseBlock(FabricBlockSettings.copyOf(Blocks.CAKE).mapColor(MapColor.OAK_TAN)));
-    public static final Block CHEESE_BLOCK1 = registerBlock("cheese_slice1",
-            new CheeseBlock(FabricBlockSettings.copyOf(Blocks.CAKE).mapColor(MapColor.OAK_TAN)));
-    public static final Block CHEESE_BLOCK2 = registerBlock("cheese_slice2",
-            new CheeseBlock(FabricBlockSettings.copyOf(Blocks.CAKE).mapColor(MapColor.OAK_TAN)));
-    public static final Block CHEESE_BLOCK3 = registerBlock("cheese_slice3",
-            new CheeseBlock(FabricBlockSettings.copyOf(Blocks.CAKE).mapColor(MapColor.OAK_TAN)));
-    public static final Block CHEESE_BLOCK4 = registerBlock("cheese_slice4",
-            new CheeseBlock(FabricBlockSettings.copyOf(Blocks.CAKE).mapColor(MapColor.OAK_TAN)));
-    public static final Block CHEESE_BLOCK5 = registerBlock("cheese_slice5",
-            new CheeseBlock(FabricBlockSettings.copyOf(Blocks.CAKE).mapColor(MapColor.OAK_TAN)));
-    public static final Block CHEESE_BLOCK6 = registerBlock("cheese_slice6",
-            new CheeseBlock(FabricBlockSettings.copyOf(Blocks.CAKE).mapColor(MapColor.OAK_TAN)));
 //KEGS REGISTER
     public static final Block KEG_ACACIA = registerBlock("keg_acacia",
             new KegOak(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.ORANGE).nonOpaque()));
