@@ -46,5 +46,15 @@
   "block.vinification.keg_mangrove": "Mangrove Keg",
   "block.vinification.keg_oak": "Oak Keg",
   "block.vinification.keg_spruce": "Spruce Keg",
-  "block.vinification.keg_warped": "Warped Keg"
+  "block.vinification.keg_warped": "Warped Keg",
+
+
+
+  "effect.vinification.sticky": "Sticky",
+  "effect.vinification.incinerate": "Incinerate",
+  "effect.vinification.glaciate": "Glaciate",
+  "effect.vinification.frozen": "Frozen",
+
+  "death.attack.frozen": "%s Froze to death",
+  "death.attack.frozen.player": "%s Froze to death while fighting %s"
 }
