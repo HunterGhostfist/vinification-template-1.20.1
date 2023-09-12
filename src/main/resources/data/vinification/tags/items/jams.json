@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "vinification:jar_blue",
+    "vinification:jar_green",
+    "vinification:jar_purple",
+    "vinification:jar_red"
+  ]
+}

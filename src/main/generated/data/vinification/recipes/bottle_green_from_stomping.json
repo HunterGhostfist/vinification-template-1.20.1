@@ -1,0 +1,14 @@
+{
+  "type": "vinification:stomping_barrel",
+  "ingredients": [
+    {
+      "item": "vinification:grapes_green"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "output": {
+    "item": "vinification:bottle_green"
+  }
+}

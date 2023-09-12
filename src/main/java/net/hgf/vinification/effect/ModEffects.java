@@ -18,6 +18,10 @@ public class ModEffects {
             new FrozenEffect(StatusEffectCategory.HARMFUL, 0x78AE00));
     public static final StatusEffect GLACIATE = registerStatusEffect("glaciate",
             new GlaciateEffect(StatusEffectCategory.BENEFICIAL, 0x78AE00));
+    public static final StatusEffect VOID_CRAWLER = registerStatusEffect("void_crawler",
+            new VoidCrawlerEffect(StatusEffectCategory.BENEFICIAL, 0x78AE00));
+    public static final StatusEffect HUNGOVER = registerStatusEffect("hungover",
+            new HungoverEffect(StatusEffectCategory.HARMFUL, 0x78AE00));
 
     private static StatusEffect registerStatusEffect(String name, StatusEffect statusEffect) {
         return Registry.register(Registries.STATUS_EFFECT, new Identifier(Vinification.MOD_ID, name), statusEffect);

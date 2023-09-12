@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "vinification:keg_acacia",
+    "vinification:keg_birch",
+    "vinification:keg_cherry",
+    "vinification:keg_crimson",
+    "vinification:keg_dark_oak",
+    "vinification:keg_jungle",
+    "vinification:keg_mangrove",
+    "vinification:keg_oak",
+    "vinification:keg_spruce",
+    "vinification:keg_warped",
+  ]
+}

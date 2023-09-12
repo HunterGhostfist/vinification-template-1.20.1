@@ -3,6 +3,9 @@ package net.hgf.vinification.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.hgf.vinification.block.ModBlocks;
+import net.hgf.vinification.datagen.recipe.AgingBarrelRecipeBuilder;
+import net.hgf.vinification.datagen.recipe.KegRecipeBuilder;
+import net.hgf.vinification.datagen.recipe.StompingBarrelRecipeBuilder;
 import net.hgf.vinification.item.ModItems;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
@@ -208,6 +211,35 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.GRAPES_PURPLE, RecipeCategory.MISC, ModBlocks.GRAPE_CRATE_PURPLE);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.GRAPES_RED, RecipeCategory.MISC, ModBlocks.GRAPE_CRATE_RED);
 
+        new StompingBarrelRecipeBuilder(ModItems.GRAPES_BLUE, ModItems.BOTTLE_BLUE, 1)
+                .criterion(hasItem(ModItems.GRAPES_BLUE), conditionsFromItem(ModItems.GRAPES_BLUE)).offerTo(exporter);
+        new StompingBarrelRecipeBuilder(ModItems.GRAPES_GREEN, ModItems.BOTTLE_GREEN, 1)
+                .criterion(hasItem(ModItems.GRAPES_GREEN), conditionsFromItem(ModItems.GRAPES_GREEN)).offerTo(exporter);
+        new StompingBarrelRecipeBuilder(ModItems.GRAPES_PURPLE, ModItems.BOTTLE_PURPLE, 1)
+                .criterion(hasItem(ModItems.GRAPES_PURPLE), conditionsFromItem(ModItems.GRAPES_PURPLE)).offerTo(exporter);
+        new StompingBarrelRecipeBuilder(ModItems.GRAPES_RED, ModItems.BOTTLE_RED, 1)
+                .criterion(hasItem(ModItems.GRAPES_RED), conditionsFromItem(ModItems.GRAPES_RED)).offerTo(exporter);
 
+        new KegRecipeBuilder(ModItems.BOTTLE_BLUE, ModItems.WINE_BOTTLE_BLUE, 1)
+                .criterion(hasItem(ModItems.BOTTLE_BLUE), conditionsFromItem(ModItems.BOTTLE_BLUE)).offerTo(exporter);
+        new KegRecipeBuilder(ModItems.BOTTLE_GREEN, ModItems.WINE_BOTTLE_GREEN, 1)
+                .criterion(hasItem(ModItems.BOTTLE_GREEN), conditionsFromItem(ModItems.BOTTLE_GREEN)).offerTo(exporter);
+        new KegRecipeBuilder(Items.HONEY_BOTTLE, ModItems.WINE_BOTTLE_HONEY, 1)
+                .criterion(hasItem(Items.HONEY_BOTTLE), conditionsFromItem(Items.HONEY_BOTTLE)).offerTo(exporter);
+        new KegRecipeBuilder(ModItems.BOTTLE_PURPLE, ModItems.WINE_BOTTLE_PURPLE, 1)
+                .criterion(hasItem(ModItems.BOTTLE_PURPLE), conditionsFromItem(ModItems.BOTTLE_PURPLE)).offerTo(exporter);
+        new KegRecipeBuilder(ModItems.BOTTLE_RED, ModItems.WINE_BOTTLE_RED, 1)
+                .criterion(hasItem(ModItems.BOTTLE_RED), conditionsFromItem(ModItems.BOTTLE_RED)).offerTo(exporter);
+
+        new AgingBarrelRecipeBuilder(ModItems.WINE_BOTTLE_BLUE, ModItems.WINE_BOTTLE_BLUE_QUALITY, 1)
+                .criterion(hasItem(ModItems.WINE_BOTTLE_BLUE), conditionsFromItem(ModItems.WINE_BOTTLE_BLUE)).offerTo(exporter);
+        new AgingBarrelRecipeBuilder(ModItems.WINE_BOTTLE_GREEN, ModItems.WINE_BOTTLE_GREEN_QUALITY, 1)
+                .criterion(hasItem(ModItems.WINE_BOTTLE_GREEN), conditionsFromItem(ModItems.WINE_BOTTLE_GREEN)).offerTo(exporter);
+        new AgingBarrelRecipeBuilder(ModItems.WINE_BOTTLE_PURPLE, ModItems.WINE_BOTTLE_PURPLE, 1)
+                .criterion(hasItem(ModItems.WINE_BOTTLE_PURPLE), conditionsFromItem(ModItems.WINE_BOTTLE_PURPLE)).offerTo(exporter);
+        new AgingBarrelRecipeBuilder(ModItems.WINE_BOTTLE_RED, ModItems.WINE_BOTTLE_RED_QUALITY, 1)
+                .criterion(hasItem(ModItems.WINE_BOTTLE_RED), conditionsFromItem(ModItems.WINE_BOTTLE_RED)).offerTo(exporter);
+        new AgingBarrelRecipeBuilder(Items.MILK_BUCKET, ModBlocks.CHEESE_BLOCK, 1)
+                .criterion(hasItem(Items.MILK_BUCKET), conditionsFromItem(Items.MILK_BUCKET)).offerTo(exporter);
     }
 }

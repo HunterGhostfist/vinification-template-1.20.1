@@ -24,7 +24,7 @@ public class ModLootTableModifiers {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(1.0f)) // Spawns 100% of the time
-                        .with(ItemEntry.builder(ModItems.GRAPES_BLUE))
+                        .with(ItemEntry.builder(ModItems.SEEDS_BLUE))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0.1f, 4.0f)).build());
 
                 tableBuilder.pool(poolBuilder.build());
@@ -33,7 +33,7 @@ public class ModLootTableModifiers {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(0.65f)) // Spawns 65% of the time
-                        .with(ItemEntry.builder(ModItems.GRAPES_PURPLE))
+                        .with(ItemEntry.builder(ModItems.SEEDS_PURPLE))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0.1f, 4.0f)).build());
 
                 tableBuilder.pool(poolBuilder.build());
@@ -42,7 +42,7 @@ public class ModLootTableModifiers {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(0.85f)) // Spawns 65% of the time
-                        .with(ItemEntry.builder(ModItems.GRAPES_RED))
+                        .with(ItemEntry.builder(ModItems.SEEDS_RED))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0.1f, 4.0f)).build());
 
                 tableBuilder.pool(poolBuilder.build());

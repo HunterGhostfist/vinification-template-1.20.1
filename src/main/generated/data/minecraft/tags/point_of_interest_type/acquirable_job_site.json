@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "vinification:aging_barrelpoi",
+      "required": false
+    }
+  ]
+}

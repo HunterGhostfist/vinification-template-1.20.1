@@ -1,0 +1,14 @@
+{
+  "type": "vinification:keg",
+  "ingredients": [
+    {
+      "item": "minecraft:honey_bottle"
+    },
+    {
+      "item": "vinification:wine_bottle_empty"
+    }
+  ],
+  "output": {
+    "item": "vinification:wine_bottle_honey"
+  }
+}

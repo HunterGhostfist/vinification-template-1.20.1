@@ -1,0 +1,14 @@
+{
+  "type": "vinification:keg",
+  "ingredients": [
+    {
+      "item": "vinification:bottle_blue"
+    },
+    {
+      "item": "vinification:wine_bottle_empty"
+    }
+  ],
+  "output": {
+    "item": "vinification:wine_bottle_blue"
+  }
+}

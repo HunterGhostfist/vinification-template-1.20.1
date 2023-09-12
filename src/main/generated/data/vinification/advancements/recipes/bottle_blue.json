@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_grapes_blue": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vinification:grapes_blue"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "vinification:bottle_blue"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_grapes_blue"
+    ],
+    [
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "vinification:bottle_blue"
+    ]
+  },
+  "sends_telemetry_event": true
+}

@@ -1,6 +1,7 @@
 {
   "itemgroup.wine": "Vinification",
 
+  "item.vinification.cheese": "Cheese Wheel",
   "item.vinification.grapes_blue": "Blue Grapes",
   "item.vinification.grapes_green": "Green Grapes",
   "item.vinification.grapes_purple": "Purple Grapes",
@@ -27,8 +28,12 @@
   "item.vinification.seeds_green": "Green Grape Seeds",
   "item.vinification.seeds_purple": "Purple Grape Seeds",
   "item.vinification.seeds_red": "Red Grape Seeds",
+  "item.vinification.bottle_blue": "Blue Grape Slurry",
+  "item.vinification.bottle_green": "Green Grape Slurry",
+  "item.vinification.bottle_purple": "Purple Grape Slurry",
+  "item.vinification.bottle_red": "Red Grape Slurry",
 
-  "block.vinification.cheese_block": "Cheese Wheel",
+  "block.vinification.cheese": "Cheese Wheel",
   "block.vinification.grape_crate_blue": "Crate of Blue Grapes",
   "block.vinification.grape_crate_green": "Crate of Green Grapes",
   "block.vinification.grape_crate_purple": "Crate of Purple Grapes",
@@ -54,7 +59,11 @@
   "effect.vinification.incinerate": "Incinerate",
   "effect.vinification.glaciate": "Glaciate",
   "effect.vinification.frozen": "Frozen",
+  "effect.vinification.void_crawler": "Void Crawler",
+  "effect.vinification.hungover": "Hungover",
 
   "death.attack.frozen": "%s Froze to death",
-  "death.attack.frozen.player": "%s Froze to death while fighting %s"
+  "death.attack.frozen.player": "%s Froze to death while fighting %s",
+
+  "entity.minecraft.villager.sommelier": "Sommelier"
 }

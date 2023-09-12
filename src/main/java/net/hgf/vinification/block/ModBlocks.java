@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.hgf.vinification.Vinification;
 import net.hgf.vinification.block.custom.*;
+import net.minecraft.block.BarrelBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.MapColor;
@@ -38,25 +39,25 @@ public class ModBlocks {
             new CheeseBlock(FabricBlockSettings.copyOf(Blocks.CAKE).mapColor(MapColor.OAK_TAN)));
 //KEGS REGISTER
     public static final Block KEG_ACACIA = registerBlock("keg_acacia",
-            new KegOak(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.ORANGE).nonOpaque()));
+            new KegAcacia(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.ORANGE).nonOpaque()));
     public static final Block KEG_BIRCH = registerBlock("keg_birch",
-            new KegOak(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.PALE_YELLOW).nonOpaque()));
+            new KegBirch(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.PALE_YELLOW).nonOpaque()));
     public static final Block KEG_CHERRY = registerBlock("keg_cherry",
-            new KegOak(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.TERRACOTTA_WHITE).nonOpaque()));
+            new KegCherry(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.TERRACOTTA_WHITE).nonOpaque()));
     public static final Block KEG_CRIMSON = registerBlock("keg_crimson",
-            new KegOak(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.DARK_CRIMSON).nonOpaque()));
+            new KegCrimson(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.DARK_CRIMSON).nonOpaque()));
     public static final Block KEG_DARK_OAK = registerBlock("keg_dark_oak",
-            new KegOak(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.BROWN).nonOpaque()));
+            new KegDarkOak(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.BROWN).nonOpaque()));
     public static final Block KEG_JUNGLE = registerBlock("keg_jungle",
-            new KegOak(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.DIRT_BROWN).nonOpaque()));
+            new KegJungle(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.DIRT_BROWN).nonOpaque()));
     public static final Block KEG_MANGROVE = registerBlock("keg_mangrove",
-            new KegOak(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.SPRUCE_BROWN).nonOpaque()));
+            new KegMangrove(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.SPRUCE_BROWN).nonOpaque()));
     public static final Block KEG_OAK = registerBlock("keg_oak",
             new KegOak(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.OAK_TAN).nonOpaque()));
     public static final Block KEG_SPRUCE = registerBlock("keg_spruce",
-            new KegOak(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.SPRUCE_BROWN).nonOpaque()));
+            new KegSpruce(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.SPRUCE_BROWN).nonOpaque()));
     public static final Block KEG_WARPED = registerBlock("keg_warped",
-            new KegOak(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.DARK_AQUA).nonOpaque()));
+            new KegWarped(FabricBlockSettings.copyOf(Blocks.BARREL).mapColor(MapColor.DARK_AQUA).nonOpaque()));
     public static final Block AGING_BARREL = registerBlock("aging_barrel",
             new AgingBarrel(FabricBlockSettings.copyOf(Blocks.BARREL).nonOpaque()));
     public static final Block STOMPING_BARREL = registerBlock("stomping_barrel",

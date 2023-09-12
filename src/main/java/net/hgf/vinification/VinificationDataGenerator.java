@@ -14,5 +14,7 @@ public class VinificationDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModItemTagProvider::new);
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModRecipeGenerator::new);
+		pack.addProvider(ModPOITagProvider::new);
+
 	}
 }

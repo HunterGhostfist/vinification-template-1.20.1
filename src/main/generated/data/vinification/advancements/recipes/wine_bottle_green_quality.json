@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "vinification:wine_bottle_green_quality"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wine_bottle_green": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vinification:wine_bottle_green"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_wine_bottle_green"
+    ],
+    [
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "vinification:wine_bottle_green_quality"
+    ]
+  },
+  "sends_telemetry_event": true
+}

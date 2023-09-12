@@ -58,16 +58,20 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.JAR_RED, Models.GENERATED);
         itemModelGenerator.register(ModItems.JAR_RESIN, Models.GENERATED);
         itemModelGenerator.register(ModItems.SAP, Models.GENERATED);
-        itemModelGenerator.register(ModItems.WINE_BOTTLE_BLUE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.WINE_BOTTLE_BLUE_QUALITY, Models.GENERATED);
-        itemModelGenerator.register(ModItems.WINE_BOTTLE_EMPTY, Models.GENERATED);
-        itemModelGenerator.register(ModItems.WINE_BOTTLE_GREEN, Models.GENERATED);
-        itemModelGenerator.register(ModItems.WINE_BOTTLE_GREEN_QUALITY, Models.GENERATED);
-        itemModelGenerator.register(ModItems.WINE_BOTTLE_HONEY, Models.GENERATED);
-        itemModelGenerator.register(ModItems.WINE_BOTTLE_PURPLE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.WINE_BOTTLE_PURPLE_QUALITY, Models.GENERATED);
-        itemModelGenerator.register(ModItems.WINE_BOTTLE_RED, Models.GENERATED);
-        itemModelGenerator.register(ModItems.WINE_BOTTLE_RED_QUALITY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WINE_BOTTLE_BLUE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.WINE_BOTTLE_BLUE_QUALITY, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.WINE_BOTTLE_EMPTY, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.WINE_BOTTLE_GREEN, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.WINE_BOTTLE_GREEN_QUALITY, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.WINE_BOTTLE_HONEY, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.WINE_BOTTLE_PURPLE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.WINE_BOTTLE_PURPLE_QUALITY, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.WINE_BOTTLE_RED, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.WINE_BOTTLE_RED_QUALITY, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BOTTLE_BLUE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BOTTLE_GREEN, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BOTTLE_PURPLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BOTTLE_RED, Models.GENERATED);
 
 
 

@@ -1,0 +1,14 @@
+{
+  "type": "vinification:aging_barrel",
+  "ingredients": [
+    {
+      "item": "minecraft:honeycomb"
+    },
+    {
+      "item": "vinification:wine_bottle_blue"
+    }
+  ],
+  "output": {
+    "item": "vinification:wine_bottle_blue_quality"
+  }
+}

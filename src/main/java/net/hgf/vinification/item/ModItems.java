@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.hgf.vinification.Vinification;
 import net.hgf.vinification.block.ModBlocks;
+import net.hgf.vinification.item.custom.*;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -20,39 +21,39 @@ public class ModItems {
     public static final Item GRAPES_RED = registerItem("grapes_red",
             new Item(new FabricItemSettings().food(ModFoodComponents.GRAPES_RED)));
     public static final Item JAR_BLUE = registerItem("jar_blue",
-            new Item(new FabricItemSettings().food(ModFoodComponents.JAR_BLUE)));
+            new Item(new FabricItemSettings().food(ModFoodComponents.JAR_BLUE).maxCount(16)));
     public static final Item JAR_EMPTY = registerItem("jar_empty",
             new Item(new FabricItemSettings()));
     public static final Item JAR_GREEN = registerItem("jar_green",
-            new Item(new FabricItemSettings().food(ModFoodComponents.JAR_GREEN)));
+            new Item(new FabricItemSettings().food(ModFoodComponents.JAR_GREEN).maxCount(16)));
     public static final Item JAR_PURPLE = registerItem("jar_purple",
-            new Item(new FabricItemSettings().food(ModFoodComponents.JAR_PURPLE)));
+            new Item(new FabricItemSettings().food(ModFoodComponents.JAR_PURPLE).maxCount(16)));
     public static final Item JAR_RED = registerItem("jar_red",
-            new Item(new FabricItemSettings().food(ModFoodComponents.JAR_RED)));
+            new Item(new FabricItemSettings().food(ModFoodComponents.JAR_RED).maxCount(16)));
     public static final Item JAR_RESIN = registerItem("jar_resin",
-            new Item(new FabricItemSettings()));
+            new Item(new FabricItemSettings().maxCount(16)));
     public static final Item SAP = registerItem("sap",
-            new Item(new FabricItemSettings()));
-    public static final Item WINE_BOTTLE_BLUE = registerItem("wine_bottle_blue",
-            new Item(new FabricItemSettings()));
-    public static final Item WINE_BOTTLE_BLUE_QUALITY = registerItem("wine_bottle_blue_quality",
             new Item(new FabricItemSettings()));
     public static final Item WINE_BOTTLE_EMPTY = registerItem("wine_bottle_empty",
             new Item(new FabricItemSettings()));
+    public static final Item WINE_BOTTLE_BLUE = registerItem("wine_bottle_blue",
+            new WineBottleBlue(new FabricItemSettings().recipeRemainder(WINE_BOTTLE_EMPTY).maxCount(16)));
+    public static final Item WINE_BOTTLE_BLUE_QUALITY = registerItem("wine_bottle_blue_quality",
+            new WineBottleBlueQuality(new FabricItemSettings().recipeRemainder(WINE_BOTTLE_EMPTY).maxCount(16)));
     public static final Item WINE_BOTTLE_GREEN = registerItem("wine_bottle_green",
-            new Item(new FabricItemSettings()));
+            new WineBottleGreen(new FabricItemSettings().recipeRemainder(WINE_BOTTLE_EMPTY).maxCount(16)));
     public static final Item WINE_BOTTLE_GREEN_QUALITY = registerItem("wine_bottle_green_quality",
-            new Item(new FabricItemSettings()));
+            new WineBottleGreenQuality(new FabricItemSettings().recipeRemainder(WINE_BOTTLE_EMPTY).maxCount(16)));
     public static final Item WINE_BOTTLE_HONEY = registerItem("wine_bottle_honey",
-            new Item(new FabricItemSettings()));
+            new WineBottleHoney(new FabricItemSettings().recipeRemainder(WINE_BOTTLE_EMPTY).maxCount(16)));
     public static final Item WINE_BOTTLE_PURPLE = registerItem("wine_bottle_purple",
-            new Item(new FabricItemSettings()));
+            new WineBottlePurple(new FabricItemSettings().recipeRemainder(WINE_BOTTLE_EMPTY).maxCount(16)));
     public static final Item WINE_BOTTLE_PURPLE_QUALITY = registerItem("wine_bottle_purple_quality",
-            new Item(new FabricItemSettings()));
+            new WineBottlePurpleQuality(new FabricItemSettings().recipeRemainder(WINE_BOTTLE_EMPTY).maxCount(16)));
     public static final Item WINE_BOTTLE_RED = registerItem("wine_bottle_red",
-            new Item(new FabricItemSettings()));
+            new WineBottleRed(new FabricItemSettings().recipeRemainder(WINE_BOTTLE_EMPTY).maxCount(16)));
     public static final Item WINE_BOTTLE_RED_QUALITY = registerItem("wine_bottle_red_quality",
-            new Item(new FabricItemSettings()));
+            new WineBottleRedQuality(new FabricItemSettings().recipeRemainder(WINE_BOTTLE_EMPTY).maxCount(16)));
     public static final Item SEEDS_BLUE = registerItem("seeds_blue",
             new AliasedBlockItem(ModBlocks.GRAPE_BUSH_BLUE, new FabricItemSettings()));
     public static final Item SEEDS_GREEN = registerItem("seeds_green",
@@ -61,6 +62,14 @@ public class ModItems {
             new AliasedBlockItem(ModBlocks.GRAPE_BUSH_PURPLE, new FabricItemSettings()));
     public static final Item SEEDS_RED = registerItem("seeds_red",
             new AliasedBlockItem(ModBlocks.GRAPE_BUSH_RED, new FabricItemSettings()));
+    public static final Item BOTTLE_BLUE = registerItem("bottle_blue",
+        new Item(new FabricItemSettings().maxCount(16)));
+    public static final Item BOTTLE_GREEN = registerItem("bottle_green",
+            new Item(new FabricItemSettings().maxCount(16)));
+    public static final Item BOTTLE_PURPLE = registerItem("bottle_purple",
+            new Item(new FabricItemSettings().maxCount(16)));
+    public static final Item BOTTLE_RED = registerItem("bottle_red",
+            new Item(new FabricItemSettings().maxCount(16)));
 
 
 
@@ -79,6 +88,10 @@ public class ModItems {
         entries.add(JAR_PURPLE);
         entries.add(JAR_RED);
         entries.add(JAR_RESIN);
+        entries.add(BOTTLE_BLUE);
+        entries.add(BOTTLE_GREEN);
+        entries.add(BOTTLE_PURPLE);
+        entries.add(BOTTLE_RED);
         entries.add(SAP);
         entries.add(WINE_BOTTLE_BLUE);
         entries.add(WINE_BOTTLE_BLUE_QUALITY);

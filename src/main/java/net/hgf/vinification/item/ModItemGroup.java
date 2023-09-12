@@ -41,6 +41,10 @@ public class ModItemGroup {
                         entries.add(ModItems.SEEDS_GREEN);
                         entries.add(ModItems.SEEDS_PURPLE);
                         entries.add(ModItems.SEEDS_RED);
+                        entries.add(ModItems.BOTTLE_BLUE);
+                        entries.add(ModItems.BOTTLE_GREEN);
+                        entries.add(ModItems.BOTTLE_PURPLE);
+                        entries.add(ModItems.BOTTLE_RED);
 
                         entries.add(ModBlocks.GRAPE_CRATE_BLUE);
                         entries.add(ModBlocks.GRAPE_CRATE_GREEN);

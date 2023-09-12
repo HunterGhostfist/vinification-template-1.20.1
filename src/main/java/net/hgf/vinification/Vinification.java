@@ -2,13 +2,16 @@ package net.hgf.vinification;
 
 import net.fabricmc.api.ModInitializer;
 import net.hgf.vinification.block.ModBlocks;
-import net.hgf.vinification.damagesource.ModDamageSources;
+import net.hgf.vinification.block.entity.ModBlockEntities;
 import net.hgf.vinification.effect.ModEffects;
 import net.hgf.vinification.item.ModItemGroup;
 import net.hgf.vinification.item.ModItems;
-import net.hgf.vinification.util.AttackEventHandler;
+import net.hgf.vinification.recipe.ModRecipes;
+import net.hgf.vinification.screen.ModScreenHandlers;
+import net.hgf.vinification.util.ModAttackEventHandler;
 import net.hgf.vinification.util.ModLootTableModifiers;
 import net.hgf.vinification.util.ModRegistries;
+import net.hgf.vinification.villager.ModVillagers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,6 +21,9 @@ public class Vinification implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
+		LOGGER.info("Vinification says Hello");
+
 		ModItemGroup.registerItemGroups();
 
 		ModItems.registerModItems();
@@ -27,9 +33,17 @@ public class Vinification implements ModInitializer {
 		ModLootTableModifiers.modifyLootTables();
 
 		ModEffects.registerEffects();
-		AttackEventHandler.registerEvents();
 
-		ModDamageSources.registerModDamageTypes();
+		ModAttackEventHandler.registerEvents();
+		ModBlockEntities.registerBlockEntities();
+
+		ModScreenHandlers.registerScreenHandler();
+		ModRecipes.registerRecipes();
+
+		ModVillagers.registerVillagers();
+
 	}
-
+		public static String makeStringID(String name) {
+		return MOD_ID + ":" + name;
+	}
 }

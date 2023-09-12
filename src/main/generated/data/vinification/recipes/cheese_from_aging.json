@@ -1,0 +1,14 @@
+{
+  "type": "vinification:aging_barrel",
+  "ingredients": [
+    {
+      "item": "minecraft:honeycomb"
+    },
+    {
+      "item": "minecraft:milk_bucket"
+    }
+  ],
+  "output": {
+    "item": "vinification:cheese"
+  }
+}
